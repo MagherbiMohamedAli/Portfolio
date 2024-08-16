@@ -31,6 +31,20 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .rowspan-2 {
+            grid-row: span 2;
+            /* Optional: Adjust height to ensure it spans correctly */
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .rowspan-2 .portfolio-img {
+            height: 100%;
+        }
+    </style>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -219,8 +233,9 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Projects
-                                Completed</button>
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
+                                href="#tab-1">Experience
+                            </button>
                         </li>
                         <li class="nav-item w-50">
                             <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
@@ -286,7 +301,26 @@
         </div>
     </div>
     <!-- Expertise End -->
+    <!-- <div class="col-lg-4 col-md-6 portfolio-item srpingular" style="height: 200px;">
+                    <div class="portfolio-img overflow-hidden" style="height: 100%;">
+                        <video style="height: 100%; width: 100%; object-fit: cover;" controls>
+                            <source src="img/record.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div> -->
+    <!-- <div class="col-lg-4 col-md-6 portfolio-item srpingular" style="height: 80%;">
+                    <div class="portfolio-img overflow-hidden" style="height: 100%;">
+                        <img class="img-fluid" src="img/capture1" alt="">
+                        <div class="portfolio-btn">
 
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/capture1"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                href="https://github.com/MagherbiMohamedAli/protechItCRM" target="_blank"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div> -->
     <!-- Projects Start -->
     <div class="container-xxl py-6 pt-5" id="project">
         <div class="container">
@@ -305,16 +339,9 @@
             </div>
 
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-4 col-md-6 portfolio-item srpingular" style="height: 200px;">
-                    <div class="portfolio-img overflow-hidden" style="height: 100%;">
-                        <video style="height: 100%; width: 100%; object-fit: cover;" controls>
-                            <source src="img/record.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item srpingular" style="height: 80%;">
-                    <div class="portfolio-img overflow-hidden" style="height: 100%;">
+                <div class="col-lg-4 col-md-6 portfolio-item srpingular">
+                    <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/capture1" alt="">
                         <div class="portfolio-btn">
 
@@ -326,10 +353,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item net" style="height: 80%;">
-                    <div class="portfolio-img overflow-hidden" style="height: 100%;">
-                        <img class="img-fluid" src="img/capture2" alt=""
-                            style="height: 100%; width: 100%; object-fit: cover;">
+                <div class="col-lg-4 col-md-6 portfolio-item net">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/capture2" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/capture2"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
@@ -339,9 +365,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 portfolio-item srpingular rowspan-2">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/capture4" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/capture4"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item mern" style="height: 80%;">
-                    <div class="portfolio-img overflow-hidden" style="height: 100%;">
+                <div class="col-lg-4 col-md-6 portfolio-item mern">
+                    <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/capture3" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/capture3"
@@ -352,18 +387,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item srpingular" style="height: 80%;">
-                    <div class="portfolio-img overflow-hidden" style="height: 100%;">
-                        <img class="img-fluid" src="img/capture4" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/capture4"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item mern" style="height: 80%;">
-                    <div class="portfolio-img overflow-hidden" style="height: 100%;">
+                <div class="col-lg-4 col-md-6 portfolio-item mern">
+                    <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/capture5" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/capture5"
@@ -374,6 +400,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -541,7 +568,8 @@
 
 
     <!-- Map Start -->
-    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -10%; margin-bottom: 10%;">
+    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s"
+        style="margin-top: -10%; margin-bottom: 10%;">
         <div class="container-xxl pt-5 px-0">
             <div class="bg-dark">
                 <iframe
@@ -562,10 +590,8 @@
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="border-bottom text-secondary" href="#">Mohamed Ali MAGHERBI</a>
                 </div>
-               
             </div>
         </div>
-    </div>
     </div>
     <!-- Copyright End -->
 
